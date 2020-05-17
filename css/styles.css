@@ -1,0 +1,66 @@
+/* colours that i am using for my pwa */
+:root{
+    --primary: rgb(0, 0, 0);
+    --secondary: rgb(224, 224, 224);
+    --title: rgb(250, 250, 250);
+  }
+  
+  /* my layout styles and colours */
+  nav{
+    background: var(--primary);
+    border-bottom: 12px solid var(--primary);
+  }
+  nav a{
+    text-transform: uppercase;
+    color: var(--title);
+  }
+  nav a span{
+    font-weight: bold;
+  }
+  nav .sidenav-trigger{
+    margin: 0;
+  }
+  
+  /* my bike reviews styles */
+  .bkes{
+    margin-top: 20px;
+  }
+  .card-panel.bike{
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px rgba(68, 68, 68, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-areas: "image details delete";
+    position: relative;
+  }
+  .bike img{
+    grid-area: image;
+    max-width: 30px;
+  }
+  .bike-details{
+    grid-area: details;
+    margin-top: 9px;
+  }
+  .bike-title{
+    font-weight: bold;
+  }
+  .bike-ingredients{
+    font-size: 1.2em;
+  }
+  
+  /* form-styles */
+  .add-btn{
+    background: var(--primary) !important;
+  }
+  input{
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+  .side-form button{
+    background: var(--primary);
+    box-shadow: 3px px 4px rgba(214, 214, 214, 0.2);
+  }
+  form .input-field{
+    margin-top: 40px;
+  }

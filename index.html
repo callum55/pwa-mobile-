@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Reviews</title>
+      <!-- links to all my files and material icons i am using -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="/css/styles.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <link rel="manifest" href="/manifest.json">
+
+
+  
+  <!---My support for Ios devices-->
+  <link rel="apple-touch-icon" href="img/icons/icon- 128x128.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 144x144.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 152x152.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 192x192.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 384x384.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 512x512.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 72x72.png">
+  <link rel="apple-touch-icon" href="img/icons/icon- 95x95.png">
+
+      <!--light house testing checking-->
+      <meta name="theme-color" content="#ffffff">
+
+  <!-- colour for theme bar ios-->
+  <meta name="apple-mobile-web-app-status-bar" content="#fffff">
+
+
+
+</head>
+<body class="black-4">
+
+    <!-- My Top Navidation -->
+    <nav class="z-depth-0">
+      <div class="nav-wrapper container">
+        <a href="/">Bike<span>Rewiew</span></a>
+        <span class="right grey-text text-darken-1">
+          <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+        </span>
+      </div>
+    </nav>
+
+ <!-- side nav -->
+ <ul id="side-menu" class="sidenav side-menu">
+    <li><a class="subheader">Bike Rewiew</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="/" class="waves-effect">Home</a></li>
+      <li><div class="divider"></div></li>
+    <li><a href="/pages/Contact.html" class="waves-effect">
+      <i class="material-icons">mail_outline</i>Contact</a>
+      <li><div class="divider"></div></li>
+    <li><a href="/pages/About.html" class="waves-effect">
+      <i class="material-icons">info</i>About Our Business</a>
+      <li><div class="divider"></div></li>
+      <li><a href="/pages/timetoride.html" class="waves-effect">
+        <i class="material-icons">directions_bike</i>Time To Ride</a>
+    </li>
+  </ul>
+
+<body>
+
+ <!-- Bike reviews -->
+ <div class="Bikes container grey-text text-darken-1">
+    <div class="card-panel bikes white row">
+      <img src="/img/bike1.png" alt="recipe thumb">
+      <div class="bike-details">
+        <div class="bike-title">Boardman pro FS</div>
+        <div class="bike-parts">Sram SF1, Full Supsensio, 29er wheels.</div>
+      </div>
+
+    </div>
+
+    <div class="card-panel bikes white row">
+        <img src="/img/bike1.png" alt="bike thumb">
+        <div class="bike-details">
+          <div class="bike-title">Voodoo Binzango </div>
+          <div class="bike-parts">1 by 11, Hardtaill, 29er wheels.</div>
+        </div>
+      </div>
+
+      <div class="card-panel bikes white row">
+        <img src="/img/bike1.png" alt="bike thumb">
+        <div class="bike-details">
+          <div class="bike-title">Santa Cruz Pro</div>
+          <div class="bike-parts">Sram SF2, Full Supsension 27.5 wheels.</div>
+        </div>
+      </div>
+
+      <div class="card-panel bikes white row">
+        <img src="/img/bike1.png" alt="bike thumb">
+        <div class="bike-details">
+          <div class="bike-title">Specilizaed</div>
+          <div class="bike-parts">Sram SF3, Full Supsension 29er wheels.</div>
+        </div>
+      </div>
+
+
+ <!-- Button for addidng new bike -->
+  <div class="right">
+    <a class="btn-floating  btn-large add-btn sidenav-trigger" data-target="side-form">
+      <i class="material-icons">send</i>
+    </a>
+  </div>
+
+  <!-- add a new bike to pwa -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-bike container section">
+      <h6 >Add a new bike</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="e.g. Boardman" id="title" type="text" class="validate">
+        <label for="title">Bike Name</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="e.g. Sram sfx1, hardtail, wheel size" id="bike specs" type="text" class="validate">
+        <label for="bike sepcs ">Bike Specs</label>
+      </div>
+    <div class="input-field center">
+      <button class="btn-large">Subission</button>
+    </div>
+    </form>
+  </div>
+
+
+
+
+  <script src="/js/app.js"></script>
+  <script src="/js/ui.js"></script>
+
+
+  
+</body>
+</html>
